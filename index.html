@@ -410,16 +410,16 @@
     </script>
 
     <script>
-    $(document).ready(function () {
-        debugger;
         $(".hire-me").click(function () {
+            debugger;
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
-        }), $("ul.nav-pills li a").click(function () {
+        });
+        $("ul.nav-pills li a").click(function () {
+            debugger;
             $("ul.nav-pills li.active").removeClass("active"), $(this).parent("li").addClass("active")
-        })
-    });
+        });
     </script>
 </body>
 </html>
