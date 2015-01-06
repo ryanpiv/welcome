@@ -211,11 +211,24 @@ h3 {
     padding: 5%;
 }
 
+.page-profile {
+    background: #fff;
+    color: #404040;
+    padding: 5%;
+}
+
     #page-profile p {
         text-align: justify;
     }
 
 #page-skills {
+    padding: 75px 0;
+    background: #f7f7f7;
+    text-align: center;
+    color: #404040;
+}
+
+.page-skills {
     padding: 75px 0;
     background: #f7f7f7;
     text-align: center;
@@ -262,4 +275,68 @@ h3 {
     color: #fff;
     padding-bottom: 8%;
     padding-top:5%;
+}
+
+#wikiInfo{
+    display: none;
+}
+
+#wikiHover:hover{
+    cursor: pointer;
+}
+
+#wikiHover:hover + #wikiInfo{
+    display:block;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated {
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+    opacity:0;
+}
+
+.show {
+    display: block !important;
+    opacity:1;
+}
+
+#appsImage{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#casesImage{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+#tabletsImage{
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
