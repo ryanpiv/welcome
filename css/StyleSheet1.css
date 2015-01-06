@@ -98,6 +98,10 @@ body, html {
     color: #D3492C;
 }
 
+.btn-default:hover{
+    color:black;
+}
+
 .centered {
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +116,7 @@ body, html {
 }
 
 .btn-round {
-    border-radius: 50%;
+    border-radius: 50% !important;
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -201,7 +205,7 @@ h3 {
 }
 
     .hire-me:hover {
-        color: #2BA9E0;
+        color: black;
         background-color: rgba(255,255,255,1);
     }
 
