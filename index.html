@@ -67,6 +67,7 @@
                     <li><a id="page-educatuion-nav" href="#page-education">Education</a></li>
                     <li><a id="page-experience-nav" href="#page-experience">Experience</a></li>
                     <li><a id="page-contact-nav" href="#page-contact">Contact</a></li>
+                    <li><a id="page-contact-nav" href="http://www.github.com/ryanpiv">Github</a></li>
                     <li><a id="resume-download" target="_blank" href="https://drive.google.com/file/d/0B5Xfd7rp82-8TmQ3bmNvcTY0Vk0/view?usp=sharing">Download Resume</a></li>
                 </ul>
             </div>
@@ -107,11 +108,11 @@
                     </div>
                 </div>
                 <div class="col-md-7">
-                    <p>I believe everyone has an Astronaut Dream.  When I began my career, I initially had plans to become a movie director.  It's so far from where I am now that it makes me smile when I think of how wrong I was on my first choice.  Intentionally, I always left technology as a back-up.  What I should have realized from the beginning was my passion for technology is my greatest strength.</p>
-                    <p>Some individuals may change their minds, but for me computers have always been my passion.  I've been toying with them my entire life.  My destiny was set when my father allowed me to take over an old Dell Inspiron he had received from work.  To friends and family, it was always between my dad and I when there was a computer problem.  To them, I was a loved one and a problem solver.  To me, the sky became my limit.</p>
-                    <p>I discoverd the art of programming during my time in high school by writing LUA scripts for video games I enjoyed.  I did not know I was programming, but I had problems that needed solving and LUA was the answer.  Soon after, I picked up Java in a class and began to understand what I had been doing.</p>
+                    <p>I believe everyone has an Astronaut Dream.  When I began my career, I initially had plans to become a movie director.  It's so far from where I am now that it makes me smile when I think of how wrong I was on my first choice.  Intentionally, I always left technology as a back-up.  What I realized was my passion for technology is my greatest strength.</p>
+                    <p>I've always done well with computers.  My destiny was set when my father allowed me to take over an old Dell Inspiron he had received from work.  To friends and family, it was always between my dad and I when there was a computer problem.  To them, I was a loved one and a problem solver.  To me, the sky became my limit.</p>
+                    <p>I discoverd the art of programming during my time in high school by writing LUA scripts for video games I enjoyed.  I did not know I was programming, but I had problems that needed solving and LUA was the answer.  Soon after, I picked up Java in a high school class and began to understand what I had been doing.</p>
                     <p>It just stuck.</p>
-                    <p>Since then, I have learned more about myself and my career goals.  I continue my path of learning in some of my free time.  You can see what I'm messing around with <a href="http://www.github.com/ryanpiv">on my github.</a>  I have a lot of motivation for success and I hope I can influence others positively with my skills.</p>
+                    <p>Since then, I have learned more about myself and my career goals.  I continue my path of learning and exploration in some of my free time.  You can see what I'm messing around with <a href="http://www.github.com/ryanpiv">on my github.</a>  I have a lot of motivation for success and I hope I can influence others positively with my skills.</p>
                 </div>
             </div>
         </div>
@@ -495,21 +496,18 @@
 
     <script>
         $(".hire-me").click(function () {
-            debugger;
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
         });
-        $("#main-menu > li").click(function () {
-            debugger;
-            $("#main-menu > li").removeClass("active"), $(this).addClass("active");
 
+        $("#main-menu > li").click(function () {
+            $("#main-menu > li").removeClass("active"), $(this).addClass("active");
             $("#resume-download").removeClass("active");
         });
 
         $("#page-welcome-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
@@ -517,7 +515,6 @@
 
         $("#page-profile-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
@@ -525,8 +522,6 @@
 
         $("#page-skills-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-            debugger;
-
             $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
@@ -534,7 +529,6 @@
 
         $("#page-educatuion-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
@@ -542,7 +536,6 @@
 
         $("#page-experience-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
@@ -550,11 +543,20 @@
 
         $("#page-contact-nav").click(function() {
             $("#main-menu > li").removeClass("active"), $(this).parent().addClass("active");
-
             return $("html, body").animate({
                 scrollTop: $($(this).attr("href")).offset().top
             }, 500), !1
         });
+
+        //begin scrolling logic for nav active class
+        /*if($(this).scrollTop()>=$('#page-contact-nav').position().top){
+          debugger;
+          var menu = $('#main-munu').children();
+          for(i in menu){
+            console.log(i);
+          }
+          //$('#page-contact-nav').addClass('active');
+        }*/
     </script>
 </body>
 </html>
