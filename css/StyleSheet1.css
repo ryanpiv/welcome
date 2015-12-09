@@ -12,6 +12,35 @@
     src: local('Oxygen Bold'), local('Oxygen-Bold'), url(http://themes.googleusercontent.com/static/fonts/oxygen/v3/yVHpdQrmTj9Kax1tmFSx2j8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+    
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    .page-experience-row{
+        height:400px !important;
+    }
+}
+
 body {
     font-family: Oxygen;
     color: white;
@@ -57,11 +86,26 @@ body, html {
         text-transform: uppercase;
     }
 
+.my-active{
+    color:#88F3FF !important;
+    border-bottom: 2px solid #fff;
+}
+
 .nav > li {
     text-align: center;
     display: inline-block;
     margin: auto;
     float: none;
+}
+
+.nav > li > a{
+    color:white;
+    padding-bottom:5px !important;
+    text-transform: uppercase;
+}
+
+.nav > li > a:hover{
+    color:#88F3FF !important;
 }
 
 .navbar-nav {
@@ -266,4 +310,62 @@ h3 {
     color: #fff;
     padding-bottom: 8%;
     padding-top:5%;
+}
+.page-experience-row{
+    margin-bottom: 10px;
+}
+.page-experience-header{
+    padding-top: 20px;
+}
+.page-experience-h3{
+    color:white !important;
+}
+.page-section-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:white; 
+    position: absolute;
+    height:100%;
+    width:100%;
+    opacity: 0.9;
+}
+.page-section-bg-overlay{
+    background-color:black;
+    opacity: 0.6;
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 10;
+}
+.page-section-text{
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    z-index: 15;
+    position: absolute;
+}
+.page-section-padding{
+    padding-left:0 !important;
+    padding-right:0 !important;
+    height:100%;
+}
+.philidor-bg{
+    background-image:url('../Images/philidor.png'); 
+}
+.daschbach-bg{
+    background-image:url('../Images/daschbach.jpg'); 
+}
+.ipipeline-bg{
+    background-image:url('../Images/ipipeline.png'); 
+}
+.temple-bg{
+    background-image:url('../Images/temple.jpg'); 
+}
+.maxeta-bg{
+    background-image:url('../Images/maxeta.png'); 
+}
+.pgw-bg{
+    background-image:url('../Images/pgw.png'); 
 }
