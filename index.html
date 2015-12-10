@@ -519,82 +519,51 @@
             offset: "bottom-in-view"
         });
 
-        $('#page-contact').height($(window).height() * .95);
+        $('#page-contact').height($(window).height());
         $(window).resize(function(){
-        	$('#page-contact').height($(window).height() * .95);
+        	$('#page-contact').height($(window).height());
         });
+
+        $(document).on("scroll", onScroll);
+
+        $('a[href^="#"]').on('click', function (e) {
+			e.preventDefault();
+			$(document).off("scroll");
+ 
+			$('a').each(function () {
+				$(this).removeClass('my-active');
+			})
+			$(this).addClass('my-active');
+ 
+			var target = this.hash;
+			$target = $(target);
+			$('html, body').stop().animate({
+				'scrollTop': $target.offset().top+2
+			}, 500, 'swing', function () {
+				window.location.hash = target;
+				$(document).on("scroll", onScroll);
+			});
+		});
     });
 
+    function onScroll(event){
+		var scrollPosition = $(document).scrollTop();
+		$('.nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			try{
+				if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() + ( parseInt($(refElement).css('padding-top')) + parseInt($(refElement).css('padding-bottom')) ) > scrollPosition) {
+				$('.nav li a').removeClass("my-active");
+				currentLink.addClass("my-active");
+				}
+			else{
+				currentLink.removeClass("my-active");
+			}
+			} catch (e) {
 
-
-    </script>
-
-    <script>
-        $(".hire-me").click(function () {
-            $("#main-menu > li > a").removeClass("my-active"), $("#page-contact-nav").addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#main-menu > li").click(function () {
-          if($(this).children().attr('class') == 'page-nav'){
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            $("#resume-download").removeClass("my-active");
-          }
-        });
-
-        $("#page-welcome-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#page-profile-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#page-skills-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#page-educatuion-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#page-experience-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        $("#page-contact-nav").click(function() {
-            $("#main-menu > li > a").removeClass("my-active"), $(this).addClass("my-active");
-            return $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top
-            }, 500), !1
-        });
-
-        //begin scrolling logic for nav my-active class
-        /*if($(this).scrollTop()>=$('#page-contact-nav').position().top){
-          debugger;
-          var menu = $('#main-munu').children();
-          for(i in menu){
-            console.log(i);
-          }
-          //$('#page-contact-nav').addClass('my-active');
-        }*/
+			}
+		});
+	}
     </script>
 </body>
 </html>
