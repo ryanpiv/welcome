@@ -44,8 +44,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 
-<body style="background-image: url(Images/04.jpg); background-size: cover">
-    <div class="navbar navbar-default navbar-static-top" style="text-align: center; width: 100%; position: fixed; top: 0px; background-color:rgba(152,152,152,0.75); border:none" role="navigation">
+<body>
+    <div class="navbar navbar-default navbar-static-top" style="text-align: center; background-color:rgba(152,152,152,0.75); border:none" role="navigation">
         <div class="container" style="width:100% !important">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -74,11 +74,15 @@
     <section id="page-welcome" class="page-welcome">
         <div class="container">
             <div class="row">
-                <header class="centered">
+            	<div class="col-xs-12">
                     <h1 style="text-transform: uppercase;">Ryan Piveteau</h1>
+                </div>
+                <div class="col-xs-12">
                     <p style="text-transform: uppercase;">Information Technology Professional</p><br />
-                    <p style="text-transform: uppercase; line-height:0;">Software Engineer</p>
-                </header>
+                </div>
+                <div class="col-xs-12">
+                    <p style="text-transform: uppercase;">Software Engineer</p>
+                </div>
             </div>
         </div>
             <div class="social-icons">
@@ -99,12 +103,11 @@
                 <p class="section-subtitle" style="text-align:center"></p>
             </header>
             <div class="row">
-                <div class="col-md-5">
-                    <div class="profile">
-                        <img src="Images/Professional Photo.jpg" style="margin-bottom:2%" alt="profile">
-                    </div>
+                <div class="profile-pic col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-4 col-sm-offset-4 col-sm-4 col-xs-12">
                 </div>
-                <div class="col-md-7">
+            </div>
+            <div class="row">
+                <div class="col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
                     <p>I believe everyone has an Astronaut Dream.  When I began my career, I initially had plans to become a movie director.  It's so far from where I am now that it makes me smile when I think of how wrong I was on my first choice.  Intentionally, I always left technology as a back-up.  What I realized was my passion for technology is my greatest strength.</p>
                     <p>I've always done well with computers.  My destiny was set when my father allowed me to take over an old Dell Inspiron he had received from work.  To friends and family, it was always between my dad and I when there was a computer problem.  To them, I was a loved one and a problem solver.  To me, the sky became my limit.</p>
                     <p>I discoverd the art of programming during my time in high school by writing LUA scripts for video games I enjoyed.  I did not know I was programming, but I had problems that needed solving and LUA was the answer.  Soon after, I picked up Java in a high school class and began to understand what I had been doing.</p>
@@ -117,82 +120,102 @@
 
     <section id="page-skills" class="page-skills">
         <div class="container">
-
             <header class="section-header">
                 <h2 class="section-title"><span>Technical Skills</span></h2>
                 <div class="spacer"></div>
                 <p style="padding-bottom:0; margin-bottom:0" class="section-subtitle"></p>
             </header>
             <div class="row">
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                     <span class="chart" data-percent="80">
                         <span class="percent">80</span>
                         <h3>C#</h3>
                         <canvas height="150" width="150"></canvas>
                     </span>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
                     <span class="chart" data-percent="80">
                         <span class="percent">80</span>
                         <h3>Visual Basic</h3>
                         <canvas height="150" width="150"></canvas>
                     </span>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <span class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h3>HTML5/CSS3</h3>
-                        <canvas height="150" width="150"></canvas>
-                    </span>
-                </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <span class="chart" data-percent="65">
-                        <span class="percent">65</span>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
                         <h3>Java</h3>
                         <canvas height="150" width="150"></canvas>
                     </span>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <span class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <h3>Javascript/Jquery</h3>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <span class="chart" data-percent="75">
+                        <span class="percent">75</span>
+                        <h3>SQL / TSQL / MySQL</h3>
                         <canvas height="150" width="150"></canvas>
                     </span>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6">
-                    <span class="chart" data-percent="65">
-                        <span class="percent">65</span>
-                        <h3>SQL/TSQL</h3>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <span class="chart" data-percent="80">
+                        <span class="percent">80</span>
+                        <h3>Javascript / Jquery</h3>
+                        <canvas height="150" width="150"></canvas>
+                    </span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6">
+                    <span class="chart" data-percent="90">
+                        <span class="percent">90</span>
+                        <h3>HTML5 / CSS3 / Bootstrap</h3>
                         <canvas height="150" width="150"></canvas>
                     </span>
                 </div>
             </div>
             <br />
+            <h3 style="padding:10px">Other Technical Skills</h3>
             <div class="row>">
-                <div class="col-md-6 col-md-offset-3">
-                    <h3 style="padding:10px">Other Technical Skills</h3>
-                    <table class="table">
-                        <tr>
-                            <td>ASP .NET MVC 4.0 and Web Forms</td>
-                            <td>Microsoft CRM 2013</td>
-                            <td>.Net Framework 4.5</td>
-                        </tr>
-                        <tr>
-                            <td>JSON/XML</td>
-                            <td>AJAX</td>
-                            <td>PHP</td>
-                        </tr>
-                        <tr>
-                            <td>Angular JS, Bootstrap</td>
-                            <td>Powershell</td>
-                            <td>Agile Methodologies and Practices</td>
-                        </tr>
-                        <tr>
-                            <td>Photoshop/Illustrator</td>
-                            <td>Crystal Reports</td>
-                            <td>TFS/Github</td>
-                        </tr>
-                    </table>
+                <div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-4 col-xs-4">
+	                <p>ASP .NET MVC 4.0 and Web Forms</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>Microsoft CRM 2013</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>Net Framework 4.5</p>
+                </div>
+            </div>
+            <legend></legend>
+            <div class="row">
+            	<div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-4 col-xs-4">
+	                <p>JSON / XML</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>AJAX</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>PHP</p>
+                </div>
+            </div>
+            <legend></legend>
+            <div class="row">
+            	<div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-4 col-xs-4">
+	                <p>Angular JS</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>Powershell</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>Agile Methodologies and Practices</p>
+                </div>
+            </div>
+            <legend></legend>
+            <div class="row">
+            	<div class="col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 col-sm-4 col-xs-4">
+	                <p>Photoshop / Illustrator</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>Crystal Reports</p>
+	            </div>
+	            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+	                <p>TFS / Github</p>
                 </div>
             </div>
         </div>
@@ -211,15 +234,15 @@
                 <div class="page-section-bg-overlay"></div>
                 <div class="page-section-bg philidor-bg"></div>
                 <article class="experience page-section-text">
-                      <header class="page-experience-header">
-                          <h3 class="page-experience-h3">Philidor Rx Services</h3>
-                          <p>Hatboro, PA / Software Engineer
-                          <br />May 2015 - Present
-                          </p>
-                      </header>
-                      <legend></legend>
-                      <p class="col-lg-6">Philidor Rx Services is a mailing pharmacy that electronically receives patients’ prescriptions for medical drugs ships them to patients within the 46 United States.  Working at Philidor, I found myself working with many technologies, some of which include C# .NET 4.5, MVC 4.0, ASPX, Javascript/JQuery, JQuery UI, Microsoft SQL Server 2014 and Powershell scripting.</p>
-                      <p class="col-lg-6">I began work as a junior developer and helped grow the production support team.  As is common with the startup atmosphere, my daily tasks involved solving the problems necessary to help our company move through each day.  I developed various tools to improve workflow and participate in my-actives to support and enhance an extremely fast growing company with more problems than people it had to solve them.</p>
+					<header class="page-experience-header">
+					  <h3 class="page-experience-h3">Philidor Rx Services</h3>
+					  <p>Hatboro, PA / Software Engineer
+					  <br />May 2015 - Present
+					  </p>
+					</header>
+					<legend></legend>
+					<p class="col-lg-6">Philidor Rx Services is a mailing pharmacy that electronically receives patients’ prescriptions for medical drugs ships them to patients within the 46 United States.  Working at Philidor, I found myself working with many technologies, some of which include C# .NET 4.5, MVC 4.0, ASPX, Javascript/JQuery, JQuery UI, Microsoft SQL Server 2014 and Powershell scripting.</p>
+					<p class="col-lg-6">I began work as a junior developer and helped grow the production support team.  As is common with the startup atmosphere, my daily tasks involved solving the problems necessary to help our company move through each day.  I developed various tools to improve workflow and participate in my-actives to support and enhance an extremely fast growing company with more problems than people it had to solve them.</p>
                 </article>
               </div>
               <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 page-section-padding page-experience-item">
