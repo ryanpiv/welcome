@@ -21,7 +21,6 @@
     }
     textarea{
         height:500px;
-        overflow-y:scroll;
         resize: none;
     }
     .section-title{
@@ -36,7 +35,6 @@
 @media only screen and (min-width : 480px) {
     .page-experience-row{
         height: 500px;
-        overflow-y:scroll;
         resize: none;
     }
     textarea{
@@ -501,7 +499,4 @@ section {
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #6CB6B9 !important;   
-}
-.scrollable{
-    overflow-y:scroll;
 }
