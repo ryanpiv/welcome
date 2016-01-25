@@ -397,9 +397,6 @@ section {
     padding:0;
     text-align: center;
 }
-.page-skills{
-    padding:0;
-}
 .page-profile > .container { 
     padding:0;
 }
@@ -467,6 +464,13 @@ section {
 .pgw-bg{
     background-image:url('../Images/pgw.jpg'); 
 }
+
+.vgt-bg{
+    background-image:url('../Images/vgt-2.jpg'); 
+}
+.dbd-bg{
+    background-image:url('../Images/dbd.jpg'); 
+}
 /*.page-experience-item h3
 {
     color: black;
@@ -476,6 +480,9 @@ section {
     -1px 1px 0 #000,
     1px 1px 0 #000;  
 }*/
+.page-experience .page-experience-item:hover{
+    cursor: default;
+}
 .page-experience-item:hover {
     cursor: pointer;
 }

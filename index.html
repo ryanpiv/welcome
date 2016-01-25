@@ -46,6 +46,7 @@
                     <li><a class="page-nav" id="page-profile-nav" href="#page-profile">Profile</a></li>
                     <li><a class="page-nav" id="page-skills-nav" href="#page-skills">Skills</a></li>
                     <li><a class="page-nav" id="page-experience-nav" href="#page-experience">Experience</a></li>
+                    <li><a class="page-nav" id="page-projects-nav" href="#page-projects">Projects</a></li>
                     <li><a class="page-nav" id="page-educatuion-nav" href="#page-education">Education</a></li>
                     <li><a class="page-nav" id="page-contact-nav" href="#page-contact">Contact</a></li>
                     <li><a target="_blank" href="http://www.github.com/ryanpiv">Github</a></li>
@@ -98,6 +99,7 @@
                     <p>I discoverd the art of programming during my time in high school by writing LUA scripts for video games I enjoyed.  I did not know I was programming, but I had problems that needed solving and LUA was the answer.  Soon after, I picked up Java in a high school class and began to understand what I had been doing.</p>
                     <p>It just stuck.</p>
                     <p>Since then, I have learned more about myself and my career goals.  I continue my path of learning and exploration in some of my free time.  You can see what I'm messing around with <a href="http://www.github.com/ryanpiv">on my github.</a>  I have a lot of motivation for success and I hope I can influence others positively with my skills.</p>
+                    <p>I'm currently working on the two side projects listed on this website and am teaching myself C++ through a book I found on Amazon.  In the litter free time I have not spent programming, I like to play League of Legends with friends, watch TV shows and attempt to make it to the gym.</p>
                 </div>
             </div>
         </div>
@@ -207,7 +209,7 @@
     </section>
 
     <section id="page-experience" class="page-experience" style="padding-bottom:0">
-        <div class="container" style="width:100% !important; padding-left:0 !important; padding-right:0 !important">
+        <div class="container">
             <header class="section-header">
                 <h2 class="section-title"><span>Relevant Experience</span></h2>
                 <div class="spacer"></div>
@@ -306,6 +308,41 @@
               </div>
             </div>
         </div>
+    </section>
+
+    <section id="page-projects" class="page-projects">
+    	<div class="container">
+    		<header class="section-header">
+                <h2 class="section-title"><span>Projects</span></h2>
+                <div class="spacer"></div>
+                <p class="section-subtitle">Click the items to continue to the demo sites.  Hover for a summary.<br />
+                Everything else I'm messing around with can be found on my <a target="_blank" href="http://www.github.com/ryanpiv">Github</a>.</p>
+            </header>
+            <div class="row page-experience-row">
+            	<div id="vgt-item" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 page-section-padding page-experience-item">
+                <div class="page-section-bg-overlay"></div>
+                <div class="page-section-bg vgt-bg"></div>
+                	<article class="experience page-section-text">
+                      <header class="page-experience-header">
+                          <h3 class="page-experience-h3">Press Start</h3>
+                          <p>In progress</p>
+                      </header><legend></legend>
+                      <p>Video games are an inspiration to me.  They're exceptional in software design methodology, technology implementation and teams of people who know nothing of what each other does coming together to create a finished product.  This site is dedicated to my appreciation of that by showcasing some games' first chance to impress their users.  To most, these are known as start screens.</p>
+                    </article>
+                </div>
+                <div id="dbd-item" class="col-lg-6 col-md-12 col-sm-12 col-xs-12 page-section-padding page-experience-item">
+                <div class="page-section-bg-overlay"></div>
+                <div class="page-section-bg dbd-bg"></div>
+                	<article class="experience page-section-text">
+                      <header class="page-experience-header">
+                          <h3 class="page-experience-h3">Daschbach Dentistry</h3>
+                          <p>In progress</p>
+                      </header><legend></legend>
+                      <p>What started as a chance to gain experience into UI/UX/Web design/development turned into a small free lance project.  As a family member and a friend, the dentistry needed a website update in terms of design, content, user accessibility and administration control.</p>
+                    </article>
+                </div>
+            </div>
+    	</div>
     </section>
 
     <section id="page-education" class="page-education">
@@ -532,6 +569,14 @@
             triggerOnce: !0,
             offset: "bottom-in-view"
         });
+
+        $("#vgt-item").click(function(){
+        	window.open('http://pressstart.gear.host/', '_blank');
+        });
+        $("#dbd-item").click(function(){
+        	window.open('http://daschbachdentistry.gear.host/', '_blank');
+        });
+
 
         $('#page-contact').height($(window).height());
         $(window).resize(function(){
